@@ -1,0 +1,22 @@
+# ceylanchen1909.person-fact-dedupe — runtime config (also read by host patch via dedupe_core)
+[plugin]
+enabled = true
+config_version = "1.0.0"
+
+[dedupe]
+# 余弦相似度阈值（EmbeddingAPI / bge 空间）；文本回退时也用同一阈值
+similarity_threshold = 0.88
+# skip_duplicate: 发现近重则不写入新事实
+# merge_keep_oldest: 写入路径同样跳过新事实；定时清理时撤回较新的近重、保留最早
+mode = "skip_duplicate"
+# true 时只打日志不跳过/不撤回
+dry_run = false
+# 为空表示对所有人生效；填 person_id 则只处理名单内
+person_id_allowlist = []
+
+[sweep]
+# 可选存量清理，默认关闭
+enabled = false
+interval_hours = 6
+max_persons_per_run = 20
+max_retracts_per_run = 50

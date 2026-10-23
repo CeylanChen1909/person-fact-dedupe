@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "id": "ceylanchen1909.person-fact-dedupe",
+  "version": "1.0.0",
+  "name": "人物事实近重写入去重",
+  "description": "在 person_fact 写回前按向量/文本相似度跳过或合并近重复事实。需配合 scripts/apply_host_patch.py 对 Host 打补丁（MaiBot 暂无官方写前 Hook）。",
+  "author": {
+    "name": "CeylanChen1909",
+    "url": "https://github.com/CeylanChen1909"
+  },
+  "license": "MIT",
+  "urls": {
+    "repository": "https://github.com/CeylanChen1909/person-fact-dedupe",
+    "homepage": "https://github.com/CeylanChen1909/person-fact-dedupe",
+    "issues": "https://github.com/CeylanChen1909/person-fact-dedupe/issues"
+  },
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "999.999.999"
+  },
+  "sdk": {
+    "min_version": "2.0.0",
+    "max_version": "999.999.999"
+  },
+  "dependencies": [],
+  "plugin_type": "extension",
+  "display": {
+    "icon": {
+      "type": "lucide",
+      "value": "filter"
+    }
+  },
+  "capabilities": [],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": ["zh-CN", "en-US"]
+  }
+}
