@@ -36,9 +36,9 @@ con.close()
 print("active claims=", len(rows))
 
 samples = [
-    "用户有成为rapper的意愿",
-    "用户想当rapper",
-    "用户想成为rapper",
+    "用户有成为xx的意愿",
+    "用户想当xx",
+    "用户想成为xx",
     "完全不相关的一句话用于负例测试xyz123",
 ]
 

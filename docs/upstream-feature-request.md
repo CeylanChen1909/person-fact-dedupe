@@ -30,7 +30,7 @@ MaiBot 插件运行在独立 Runner 子进程，无法对 Host 侧 `store_person
 
 ### Motivation / 动机
 
-同一用户事实常被多次提取成近义句（如「想当rapper / 想成为rapper」），长期记忆膨胀、检索噪声变大。写前去重比事后定时清理更干净。
+同一用户事实常被多次提取成近义句（如「想成为xx / 想当xx」），长期记忆膨胀、检索噪声变大。写前去重比事后定时清理更干净。
 
 参考实现（需 Host 补丁）：https://github.com/CeylanChen1909/person-fact-dedupe
 

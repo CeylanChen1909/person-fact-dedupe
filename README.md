@@ -2,7 +2,7 @@
 
 **人物事实近重写入去重** — skip near-duplicate person facts before they are written into MaiBot long-term memory.
 
-在人物事实（`person_fact`）写回长期记忆**之前**做近重复检测，避免同一件事被写成多条略有不同的事实（例如「想当rapper / 想成为rapper / 有成为rapper的意愿」）。
+在人物事实（`person_fact`）写回长期记忆**之前**做近重复检测，避免同一件事被写成多条略有不同的事实（例如「想成为xx / 想当xx / 有成为xx的意愿」）。
 
 | | |
 |---|---|
